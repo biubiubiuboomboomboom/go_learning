@@ -2,12 +2,14 @@ package AbstractFactory
 
 import "testing"
 
+
+
 func TestAbstract_factory(t *testing.T )  {
-	factory := new(Factory)
+	var _factory = Factory{}
 
 	//美国
-	factory.phonefactory = new(AmericanPhoneFactory)
-	phone := factory.CreatePhone("Iphone")
+	_factory.phonefactory = new(AmericanPhoneFactory)
+	phone := _factory.CreatePhone("Iphone")
 	phone.PhoneType()
 
 }

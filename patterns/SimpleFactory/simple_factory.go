@@ -16,7 +16,7 @@ type Phone interface {
 type Iphone struct {
 }
 
-func (Iphone)PhoneType()  {
+func (*Iphone)PhoneType()  {
 	fmt.Println("this is iphone")
 }
 
@@ -27,7 +27,7 @@ func (Iphone)PhoneType()  {
 type Andro struct {
 }
 
-func (Andro)PhoneType()  {
+func (*Andro)PhoneType()  {
 	fmt.Println("this is Andro")
 }
 
@@ -39,7 +39,7 @@ func (Andro)PhoneType()  {
 type Other struct {
 }
 
-func (Other)PhoneType()  {
+func (*Other)PhoneType()  {
 	fmt.Println("this is other phone ,but I dont know ")
 }
 

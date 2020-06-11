@@ -2,16 +2,17 @@ package SimpleFactory
 
 import "testing"
 
+
 func TestSimple(t *testing.T)  {
 
-	phoneFactory:= new(PhoneFactory)
+	var _phoneFactory = PhoneFactory{}
 
-	phone := phoneFactory.CreatePhone("Iphone")
+	phone := _phoneFactory.CreatePhone("Iphone")
 	phone.PhoneType()
 
-	phone = phoneFactory.CreatePhone("Andro")
+	phone = _phoneFactory.CreatePhone("Andro")
 	phone.PhoneType()
 
-	phone = phoneFactory.CreatePhone("sasasas")
+	phone = _phoneFactory.CreatePhone("sasasas")
 	phone.PhoneType()
 }
