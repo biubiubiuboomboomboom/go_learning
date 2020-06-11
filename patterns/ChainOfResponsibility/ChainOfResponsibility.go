@@ -15,7 +15,7 @@ type Gril_1 struct {
 }
 
 func (gril *Gril_1) Handle(content string) {
-	println("女生1号不喜欢你")
+	println("女生1号对你不感兴趣")
 	gril.next(gril.handler, content)
 }
 
@@ -33,7 +33,7 @@ type Gril_2 struct {
 }
 
 func (gril2 *Gril_2) Handle(content string) {
-	fmt.Println("女生2号不喜欢你")
+	fmt.Println("女生2号对你不感兴趣")
 	gril2.next(gril2.handler, content)
 }
 
@@ -52,7 +52,7 @@ type Gril_3 struct {
 }
 
 func (gril3 *Gril_3) Handle(content string) {
-	fmt.Println("女生3号不喜欢你")
+	fmt.Println("女生3号对你不感兴趣")
 	gril3.next(gril3.handler, content)
 }
 

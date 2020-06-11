@@ -10,5 +10,5 @@ func TestChain(t *testing.T)  {
 	grilHandler1.handler = grilHandler2
 	grilHandler2.handler = grilHandler3
 
-	grilHandler1.Handle("你喜欢我吗，如果不喜欢，请往前传")
+	grilHandler1.Handle("可以认识一下你吗，如果不行，请往前传")
 }
